@@ -16,8 +16,8 @@ const passport_google_oauth20_1 = require("passport-google-oauth20");
 let GoogleStrategy = class GoogleStrategy extends (0, passport_1.PassportStrategy)(passport_google_oauth20_1.Strategy) {
     constructor() {
         super({
-            clientID: '871502115190-7m1nqt0ntq6fk6g2ljjg52s9pvoe50j2.apps.googleusercontent.com',
-            clientSecret: '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',
+            // clientID: '871502115190-7m1nqt0ntq6fk6g2ljjg52s9pvoe50j2.apps.googleusercontent.com',
+            // clientSecret: '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',
             callbackURL: `${process.env.BACK_URL}/api/auth/google/redirect`,
             scope: ['profile', 'email'],
         });
