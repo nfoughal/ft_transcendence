@@ -47,8 +47,6 @@ For the DevOps side and to containerize the application, there are three contain
 
 <img width="1500" height="500" src="images/main-page.png" alt="screenshot">
 <img width="1500" height="500" src="images/login-page.png" alt="screenshot">
-<img width="1500" height="500" src="images/update-info.png" alt="screenshot">
-<img width="1500" height="500" src="images/private-profile.png" alt="screenshot">
 <img width="1500" height="500" src="images/friends-page.png" alt="screenshot">
 <img width="1500" height="500" src="images/public-profile.png" alt="screenshot">
 
