@@ -1,19 +1,31 @@
 # <p align="center">ft_transcendence (a ping pong website)</p>
 
-## Description
-"Oh, finally! I just finished the 42 common core, and thanks to ft_transcendence, but it's just an introduction to another chapter in the web story. It is just the beginning" - me.
+# FT_Transcendence
 
-ft_transcendence is a collaborative project that explores the world of building a web application from design to production. The project is about building a ping pong real-time application, using NestJs for the backend, NextJs framework for the frontend, and Prisma with PostgreSQL for the database. The project started by designing each interface of the application using Figma, which is a great tool to explore the design world.
+FT_Transcendence is an exciting web application that combines real-time chat functionalities with a remote ping pong game. The project leverages websockets for seamless communication and game synchronization, creating an engaging and interactive experience for users.
 
-It is great to have a solid database for the application, that's why Prisma is here. Prisma is an ORM (Object-Relational Mapping) tool for Node.js and TypeScript that simplifies database access and manipulation by providing a type-safe and intuitive API for interacting with databases. Prisma uses PostgreSQL as its primary database; also, it can translate queries written in TypeScript into SQL queries. This is what happens in the migration process: Prisma uses schema files to generate database models and queries for interacting with the database and provides a powerful migration system to manage changes to the database schema.
+## Features
 
-"In a restaurant, customers don't prepare their meals themselves; that's why there are waiters and chefs to serve them. The meal is expertly prepared in the kitchen before being elegantly presented to the customer at their table by the waiter."
+- **Real-Time Chat:** Users can engage in instant messaging through a websocket-powered chat system. This feature supports private and group conversations, making it easy for players to communicate during matches.
+- **Remote Ping Pong Game:** Play a dynamic and interactive ping pong game with friends or other users remotely. The game synchronizes in real-time, providing a smooth and competitive gaming experience.
+- **User Authentication:** Secure user login and registration, ensuring that players can keep track of their progress and participate in games under their own accounts.
+- **Match History:** Track past matches and view game statistics to analyze performance and improve skills.
+- **Responsive Design:** The application is designed to be responsive, offering an optimized experience on both desktop and mobile devices.
 
-The same scenario happens in a web application. There are several APIs to serve the customer by sending requests from the frontend to the backend. This type of communication uses the HTTP protocol, and for this, Axios exists. Axios is a popular JavaScript library used for making HTTP requests. Axios's role is to reach out to all the API endpoints on the backend by sending requests to it with specifying the HTTP method (GET, POST, PUT, DELETE) and the URL of the API endpoint you want to interact with. After sending a request, the backend processes the request and returns a response to the frontend.
+## Technologies Used
 
-The Application's backend is written in NestJs framework, which is a Node.js-based framework, and for real-time communication, there are WebSocket servers.
+- **Websockets:** For real-time communication and game synchronization.
+- **Next:** For building the user interface and handling game logic.
+- **Node.js:** For server-side logic and websocket management.
+- **Nest.js:** For handling HTTP requests and user authentication.
+- **Postgresql:** For storing user data and match history.
 
-For the DevOps side and to containerize the application, there are three containers, each container runs a different service. A container for the backend that runs the NestJs server, a container that runs the frontend application, and a container that runs the PostgreSQL database. To combine all those three containers together, there is docker-compose to make all the three containers interact with each other.
+## Getting Started
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/nfoughal/ft_transcendence.git
 
 ##  How to Install and Run the Application
 + To run the application, you need to add and env file at the root of the repository, the env file content is similar to this example:
